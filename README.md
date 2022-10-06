@@ -22,6 +22,7 @@ Connecting
 Once you have the data from the negotiation, you’ll need to build a websocket connection to the server. This happens over wss, The url is as follows:
 
 wss://livetiming.formula1.com/signalr/connect?clientProtocol=1.5&transport=webSockets&connectionToken=<sometoken>&connectionData=%5B%7B%22name%22%3A%22Streaming%22%7D%5D
+
 Where clientProtocol again is always 1.5, connectionData is again the json stringified hub to connect to, and connectionToken is the urlencoded connection token you got from the negotiation. In addition, you’ll have to supply the following headers:
 
 User-Agent: BestHTTP
